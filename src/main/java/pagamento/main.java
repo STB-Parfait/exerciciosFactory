@@ -9,5 +9,7 @@ public class main {
         pagamento.processarPagamento(new PagamentoPayPal("permitido@email.com"),75.00);
 
         pagamento.processarPagamento(new PagamentoCriptomoeda(500.00),300.00);
+
+        pagamento.processarPagamento(new PagamentoApplePay("IDválido"),50.00);
     }
 }

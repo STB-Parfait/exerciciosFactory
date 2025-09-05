@@ -11,7 +11,7 @@ public class PagamentoPayPal implements Pagamento{
         if(this.email == null){
             return false;
         } else{
-            return this.email.equals("invalid@email.com");
+            return !this.email.equals("invalid@email.com");
         }
     }
     @Override
